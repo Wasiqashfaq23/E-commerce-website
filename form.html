@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!-- BOOTSTRAP CDN for some functionality-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- RESOURCES FILES for styling -->
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    
+    <!-- Navigationbar -->
+
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          </div>
+
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="aboutus.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="form.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"
+            ><img src="images/cart.png" alt="" class="cart"
+          /></a>
+          <img
+            src="images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--form area-->
+
+    <div class="account">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/image1.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-6">
+            <div class="form-info">
+              <div class="form-head">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="Indicator" />
+              </div>
+
+              <form id="Login">
+                <input type="text" placeholder="User Name" />
+                <input type="password" placeholder="User Password" />
+                <button type="submit" class="submit">Submit</button>
+                <a href="">Forgot password</a>
+              </form>
+              <form id="Reg">
+                <input type="text" placeholder="User Name" />
+                <input type="email" placeholder="User Email" />
+                <button class="submit">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer area-->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="app">
+              <h6>Download Our App</h6>
+              <p>Download App for Android ios mobile phone</p>
+              <div class="foot-left">
+                <img src="images/play-store.png" alt="" />
+                <img src="images/app-store.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center">
+              <img src="images/logo-white.png" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                optio ullam ab! Fugit corrupti dignissimos alias placeat velit,
+                maxime hic.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center">
+              <h6>Useful Links</h6>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center">
+              <h6>Facebook</h6>
+              <li>twitter</li>
+              <li>Blog Post</li>
+              <li>instagram</li>
+              <li>You tube</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="underline"></div>
+          <p>&copy; Copyright 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <!--js for toggle menu-->
+
+    <script src="script.js"></script>
+
+    <!--js for toggle form  from login to register-->
+
+    <script>
+      var Login = document.getElementById("Login");
+      var Reg = document.getElementById("Reg");
+      var Indicator = document.getElementById("Indicator");
+
+      function register() {
+        Reg.style.transform = "translateX(0px)";
+        Login.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+      }
+
+      function login() {
+        Reg.style.transform = "translateX(300px)";
+        Login.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+      }
+    </script>
+  </body>
+</html>

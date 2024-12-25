@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <!-- BOOTSTRAP CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- RESOURCES FILES -->
+    <link rel="stylesheet" href="aboutus.css" />
+
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <div class="header">
+      <div class="navbar">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          </div>
+
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="aboutus.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="form.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+            <img src="images/cart.png" alt="" class="cart"
+          /></a>
+          <img
+            src="images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+    <!-- About Us Content -->
+    <section>
+      <div class="container text-center">
+        <h1>Meet Our Team</h1>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/person-1.webp"
+                alt="Person 1"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mark Zuckberg</h5>
+                <p class="card-text">CEO</p>
+                <p>
+                  Mark is the visionary behind our company. He drives the
+                  strategic direction and ensures we deliver exceptional
+                  products to our customers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/person-2.jpg"
+                alt="Person 2"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bill gates</h5>
+                <p class="card-text">Marketing Head</p>
+                <p>
+                  Bill is responsible for our marketing strategies and ensuring
+                  our brand reaches the right audience through creative
+                  campaigns.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/person-3.jpg"
+                alt="Person 3"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Elon musk</h5>
+                <p class="card-text">Product Manager</p>
+                <p>
+                  musk oversees product development and ensures our products meet
+                  the highest standards of quality and innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer Here -->
+    
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="app">
+              <h6>Download Our App</h6>
+              <p>Download App for Android or iOS mobile phones</p>
+              <div class="foot-left">
+                <img src="images/play-store.png" alt="Play Store" />
+                <img src="images/app-store.png" alt="App Store" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center">
+              <a href="index.html">
+                <img src="images/logo-white.png" alt="Logo"
+              /></a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                optio ullam ab! Fugit corrupti dignissimos alias placeat velit,
+                maxime hic.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center">
+              <h6>Useful Links</h6>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center">
+              <h6>Follow Us</h6>
+              <ul>
+                <li>Twitter</li>
+                <li>Blog Post</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="underline"></div>
+          <p>&copy; Copyright 2021</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <!--js for toggle menu-->
+
+    <script src="script.js"></script>
+      
+  </body>
+</html>

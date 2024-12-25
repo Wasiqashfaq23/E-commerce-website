@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!-- BOOTSTRAP CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- RESOURCES FILES for styling -->
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="navbar">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          </div>
+
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="aboutus.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="form.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+            <img src="images/cart.png" alt="" class="cart"
+          /></a>
+          <img
+            src="images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+
+      <!-- payment form -->
+      <section class="payment-section">
+        <div class="container payment-wrapper">
+          <!-- Image Section -->
+          <div class="payment-image">
+            <img src="images/payment.png" alt="Payment Illustration" />
+          </div>
+
+          <!-- Payment Form Section -->
+          <div class="payment-content">
+            <h1>Payment Information</h1>
+            <form class="payment-form">
+              <!-- Billing Address -->
+              <div class="form-section">
+                <h2>Billing Address</h2>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Street Address"
+                  required
+                />
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="City"
+                  required
+                />
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  placeholder="State/Region"
+                  required
+                />
+                <input
+                  type="text"
+                  id="zip"
+                  name="zip"
+                  placeholder="ZIP Code"
+                  required
+                />
+              </div>
+
+              <!-- Credit Card Information -->
+              <div class="form-section">
+                <h2>Credit Card Information</h2>
+                <input
+                  type="text"
+                  id="card-number"
+                  name="card-number"
+                  placeholder="Card Number"
+                  required
+                />
+                <input
+                  type="text"
+                  id="expiry-date"
+                  name="expiry-date"
+                  placeholder="MM/YY"
+                  required
+                />
+                <input
+                  type="text"
+                  id="cvv"
+                  name="cvv"
+                  placeholder="CVV"
+                  required
+                />
+              </div>
+
+              <!-- Payment Button -->
+              <button type="submit" class="btn pay-button">Pay Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="app">
+                <h6>Downloaad Our App</h6>
+                <p>Download App for Android ios mobile phone</p>
+                <div class="foot-left">
+                  <img src="images/play-store.png" alt="" />
+                  <img src="images/app-store.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="text-center">
+                <img src="images/logo-white.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                  optio ullam ab! Fugit corrupti dignissimos alias placeat
+                  velit, maxime hic.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="text-center">
+                <h6>Useful Links</h6>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="text-center">
+                <h6>Facebook</h6>
+                <li>twitter</li>
+                <li>Blog Post</li>
+                <li>instagram</li>
+                <li>You tube</li>
+              </div>
+            </div>
+          </div>
+          <div class="foot">
+            <div class="underline"></div>
+            <p>&copy; Copyright 2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--js for toggle menu in small screens-->
+
+    <script src="script.js"></script>
+  </body>
+</html>

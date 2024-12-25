@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!-- BOOTSTRAP CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- RESOURCES FILES -->
+    <link rel="stylesheet" href="contact.css" />
+
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="navbar">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          </div>
+
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="aboutus.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="form.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+            <img src="images/cart.png" alt="" class="cart"
+          /></a>
+          <img
+            src="images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+
+
+<div class="main">
+    <div class="form-container">
+        <h2>Contact us</h2>
+        <p>24/7 We will answer your questions and problems</p>
+        
+        <form action="#" method="post">
+            <!-- First and Last Name -->
+            <div class="form-row">
+                <div class="input-box">
+                    <label for="first-name">First Name</label>
+                    <!-- <span class="icon">&#128100;</span> -->
+                    <input type="text" id="first-name" placeholder="&#128100 First Name">
+                
+                    <label for="last-name">Last Name</label>
+                    <!-- <span class="icon">&#128100;</span> -->
+                    <input type="text" id="last-name" placeholder=" Last Name">
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="input-box">
+                <label for="email">Email</label>
+                <!-- <span class="icon">&#9993;</span> Email Icon -->
+                <input type="email" id="email" placeholder="&#9993  Email">
+            </div>
+
+            <!-- Phone -->
+            <div class="input-box">
+                <label for="phone">Phone</label>
+                <!-- <span class="icon">&#128222;</span> Phone Icon -->
+                <input type="tel" id="phone" placeholder="&#128222 Phone">
+            </div>
+
+            <!-- Describe your issue -->
+            <div class="input-box">
+                <label for="message">Details</label>
+                <textarea id="message" placeholder="Write here" rows="4"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </div>
+  </div>
+
+    
+  <!--footer area-->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="app">
+            <h6>Downloaad Our App</h6>
+            <p>Download App for Android ios mobile phone</p>
+            <div class="foot-left">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center">
+            <img src="images/logo-white.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              optio ullam ab! Fugit corrupti dignissimos alias placeat velit,
+              maxime hic.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center">
+            <h6>Useful Links</h6>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center">
+            <h6>Facebook</h6>
+            <li>twitter</li>
+            <li>Blog Post</li>
+            <li>instagram</li>
+            <li>You tube</li>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot">
+        <div class="underline"></div>
+        <p>&copy; Copyright 2021</p>
+      </div>
+    </div>
+  </div>
+
+  <!--js for toggle menu-->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
